@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Select } from 'antd';
+import { ConfigProvider, Select } from 'antd';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const { Option } = Select;
@@ -21,7 +21,7 @@ const data = [
 
 
 export default function Chart() {
-    const [selectedYear, setSelectedYear] = useState('Year');
+    const [selectedYear, setSelectedYear] = useState('Monthly');
 
     const handleYearChange = (value) => {
         setSelectedYear(value);
@@ -40,15 +40,34 @@ export default function Chart() {
                         <p className="h-3 w-3 bg-[#6CA0DC] rounded-full"></p>
                         <h1>Profit</h1>
                     </div>
-                    <div>
-                        <Select value={selectedYear} onChange={handleYearChange} className="w-32 h-[30px] ">
+                    <div>  <ConfigProvider
+
+                            theme={{
+                                components: {
+                                    Select: {
+                                        
+                                        activeOutlineColor: "none",
+                                        activeBorderColor: "none",
+                                        colorBgContainer:'bg-linear-to-r from-[#DDB861] to-[#F8E45C]',
+                                        colorText: '#1A1A1A',
+                                        hoverBorderColor: "none",
+
+
+                                    },
+                                },
+                                token: {
+                                    borderRadius: "0px",
+                                    colorText: "#1A1A1A"
+                                }
+                            }}>
+                        <Select value={selectedYear} onChange={handleYearChange} className="w-44 h-[40px] ">
                             <Option value="2025">2025</Option>
                             <Option value="2026">2026</Option>
                             <Option value="2027">2027</Option>
                             <Option value="2028">2028</Option>
                             <Option value="2029">2029</Option>
                             <Option value="2030">2030</Option>
-                        </Select>
+                        </Select></ConfigProvider>
                     </div>
                 </div>
             </div>
