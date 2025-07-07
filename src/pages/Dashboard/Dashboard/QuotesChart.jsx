@@ -6,20 +6,20 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 const { Option } = Select;
 const data = [
     // { name: 'Jan', uv: 4000,  amt: 2400 },
-    { name: 'Jan', uv: 3000,  amt: 2400 },
+    { name: 'Jan', uv: 3000, amt: 2400 },
     { name: 'Feb', uv: 3500, amt: 2210 },
-    { name: 'Mar', uv: 2000,  amt: 2290 },
-    { name: 'Apr', uv: 2780,  amt: 2000 },
-    { name: 'May', uv: 1890,  amt: 2181 },
-    { name: 'Jun', uv: 2890,  amt: 2500 },
-    { name: 'Jul', uv: 3490,  amt: 2100 },
-    { name: 'Aug', uv: 3990,  amt: 2100 },
-    { name: 'Sep', uv: 3490,  amt: 2100 },
-    { name: 'Oct', uv: 4490,  amt: 2100 },
-    { name: 'Nov', uv: 3490,  amt: 2100 },
-    { name: 'Dec', uv: 2490,  amt: 2100 },
+    { name: 'Mar', uv: 2000, amt: 2290 },
+    { name: 'Apr', uv: 2780, amt: 2000 },
+    { name: 'May', uv: 1890, amt: 2181 },
+    { name: 'Jun', uv: 2890, amt: 2500 },
+    { name: 'Jul', uv: 3490, amt: 2100 },
+    { name: 'Aug', uv: 3990, amt: 2100 },
+    { name: 'Sep', uv: 3490, amt: 2100 },
+    { name: 'Oct', uv: 4490, amt: 2100 },
+    { name: 'Nov', uv: 3490, amt: 2100 },
+    { name: 'Dec', uv: 2490, amt: 2100 },
 ];
-const CustomTooltip = ({ payload}) => {
+const CustomTooltip = ({ payload }) => {
     if (payload && payload.length) {
         const value = payload[0].value;
 
@@ -52,11 +52,11 @@ export default function QuotesChart() {
     return (
         <div className="my-4 bg-bgColor shadow-md rounded-lg px-3 pt-1 text-textGray ">
             <div className="flex items-center justify-between my-4 ">
-                <h1 className="font-bold text-[20px]">Total Quotes  <span className='font-normal'>Statistics</span></h1>
+                <h1 className=" text-4xl font-semibold text-[#1A1A1A]">My Reveneu</h1>
                 <div className="flex justify-center items-center gap-7">
-                   
+
                     <div>
-                        <Select value={selectedYear} onChange={handleYearChange} className="w-32 h-[30px] ">
+                        <Select  value={selectedYear} onChange={handleYearChange} className="w-32 h-[30px]  bg-linear-to-r from-[#DDB861] to-[#F8E45C]">
                             <Option value="2025">2025</Option>
                             <Option value="2026">2026</Option>
                             <Option value="2027">2027</Option>
@@ -67,31 +67,31 @@ export default function QuotesChart() {
                     </div>
                 </div>
             </div>
-              <ResponsiveContainer width="100%" height={260}>
-        <AreaChart
-          width={500}
-          height={200}
-          data={data}
-          margin={{
-            top: 10,
-            right: 30,
-            left: 30,
-            bottom: 0,
-          }}
-        >
-               <defs>
-      <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stopColor="#6DBD44" stopOpacity={1} />
-        <stop offset="100%" stopColor="#6DBD44" stopOpacity={0} />
-      </linearGradient>
-    </defs>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+            <ResponsiveContainer width="100%" height={260}>
+                <AreaChart
+                    width={500}
+                    height={200}
+                    data={data}
+                    margin={{
+                        top: 10,
+                        right: 30,
+                        left: 30,
+                        bottom: 0,
+                    }}
+                >
+                    <defs>
+                        <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stopColor="#6DBD44" stopOpacity={1} />
+                            <stop offset="100%" stopColor="#6DBD44" stopOpacity={0} />
+                        </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
 
-             <Tooltip content={<CustomTooltip />} />
-          <Area  type="monotone" dataKey="uv" stroke="#6DBD44" fill="url(#colorUv)" />
-        </AreaChart>
-      </ResponsiveContainer>
+                    <Tooltip content={<CustomTooltip />} />
+                    <Area type="monotone" dataKey="uv" stroke="#6DBD44" fill="url(#colorUv)" />
+                </AreaChart>
+            </ResponsiveContainer>
         </div>
     );
 }
