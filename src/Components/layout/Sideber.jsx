@@ -4,13 +4,13 @@ import { PiNoteDuotone } from 'react-icons/pi';
 
 import { MdKeyboardArrowUp, MdLogout, MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { useState } from 'react';
-import { BiCategory } from 'react-icons/bi';
 import Logo from '../Shared/Logo';
+import { RxDashboard } from 'react-icons/rx';
 
 
 
 const menuItems = [
-    { label: 'Dashboard', path: '/', icon: <BiCategory size={22} /> },
+    { label: 'Dashboard', path: '/', icon: <RxDashboard size={22} /> },
 
     ,
 

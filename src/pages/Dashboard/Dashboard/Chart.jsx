@@ -44,16 +44,14 @@ export default function Chart() {
 
                             theme={{
                                 components: {
-                                    Select: {
-                                        
-                                        activeOutlineColor: "none",
-                                        activeBorderColor: "none",
-                                        colorBgContainer:'bg-linear-to-r from-[#DDB861] to-[#F8E45C]',
-                                        colorText: '#1A1A1A',
-                                        hoverBorderColor: "none",
-
-
-                                    },
+                                   Select: {
+                optionFontSize: 14,
+                optionPadding: '8px 12px',
+                colorText: '#1A1A1A',
+                selectorBg: '#F8E45C',
+                borderRadius: 4,
+                controlHeight: 30,
+              },
                                 },
                                 token: {
                                     borderRadius: "0px",
