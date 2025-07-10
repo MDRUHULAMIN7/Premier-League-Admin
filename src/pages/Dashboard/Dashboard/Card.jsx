@@ -2,7 +2,7 @@ import sales from '/sales.svg';
 
 const Card = () => {
     return (
-        <div className="grid grid-cols-4 gap-5 pt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 pt-10">
             {/* user */}
 
             <div className="rounded-[2px] shadow-lg shadow-gray-500 w-full  flex flex-col items-center bg-linear-to-r from-[#DDB861] to-[#F8E45C]

@@ -94,7 +94,7 @@ export default function QuotesChart() {
   };
 
   return (
-    <div className="mt-10 bg-white shadow-md rounded-lg px-4 py-3">
+    <div className="mt-10  shadow-md rounded-lg px-4 py-3">
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-4xl font-semibold text-[#1A1A1A]">My Reveneu</h1>
 <ConfigProvider

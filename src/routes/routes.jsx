@@ -3,6 +3,7 @@ import App from "../App";
 
 import { Setting } from "../pages/Dashboard/Setting/Setting";
 import Dashboard from "../pages/Dashboard/Dashboard/Dashboard";
+import Predictions from "../pages/Dashboard/Predictions/Predictions";
 
 
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path:"/setting",
         element:<div><Setting/></div>
+      },
+      {
+        path:"/predictions",
+        element:<div><Predictions/></div>
       },
     ]
   }

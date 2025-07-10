@@ -77,11 +77,11 @@ export default function Chart() {
         </ConfigProvider>
                     </div>
          <div className="flex items-center gap-x-2 text-primary">
-  <span className="h-3 w-3 bg-[#0C407B] rounded-full inline-block align-middle"></span>
+  <span className="h-3 w-3 bg-[#0C407B]  inline-block align-middle"></span>
   <span className="text-sm font-medium leading-[1] align-middle ">User Growth</span>
 </div>
          <div className="flex items-center gap-x-2 text-primary">
-  <span className="h-3 w-3 bg-[#FFC20E] rounded-full inline-block align-middle"></span>
+  <span className="h-3 w-3 bg-[#FFC20E]  inline-block align-middle"></span>
   <span className="text-sm font-medium leading-[1] align-middle ">Ticket Sold</span>
 </div>
 
