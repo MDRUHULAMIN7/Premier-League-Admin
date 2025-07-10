@@ -1,8 +1,12 @@
+import PredictionTable from "./PredictionTable"
 
 
 const Predictions = () => {
   return (
-    <div>Predictions</div>
+    <div>Predictions
+
+      <PredictionTable />
+    </div>
   )
 }
 
