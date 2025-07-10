@@ -248,7 +248,7 @@ const columns = [
 
 const PredictionTable = () => {
   return (
-    <div className="p-4">
+    <div className="">
       <ConfigProvider
         theme={{
           components: {
@@ -281,7 +281,7 @@ const PredictionTable = () => {
           dataSource={predictionData}
           columns={columns}
           rowKey="key"
-          pagination={{ pageSize: 13, position: ['bottomCenter'] }}
+          pagination={{ pageSize: 12, position: ['bottomCenter'] }}
           rowClassName={() =>
             'hover:bg-gray-50 rounded-md my-4 bg-white shadow-sm transition'
           }
