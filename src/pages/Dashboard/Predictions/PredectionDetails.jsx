@@ -6,266 +6,42 @@ const sampleEntries = [
   {
     id: "#987598",
     date: "26/02/2025",
-    scores: [
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-    ],
+    scores: Array.from({ length: 10 }, () => ({
+      teamA: "chelsea.png",
+      scoreA: "01",
+      scoreB: "02",
+      teamB: "manchester.png",
+    })),
   },
   {
     id: "#123456",
     date: "03/03/2025",
-    scores: [
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-    ],
+    scores: Array.from({ length: 10 }, () => ({
+      teamA: "chelsea.png",
+      scoreA: "01",
+      scoreB: "02",
+      teamB: "manchester.png",
+    })),
   },
   {
     id: "#789101",
     date: "10/03/2025",
-    scores: [
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-    ],
+    scores: Array.from({ length: 10 }, () => ({
+      teamA: "chelsea.png",
+      scoreA: "01",
+      scoreB: "02",
+      teamB: "manchester.png",
+    })),
   },
   {
     id: "#789601",
     date: "10/03/2025",
-    scores: [
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "01",
-        scoreB: "02",
-        teamB: "manchester.png",
-      },
-      {
-        teamA: "chelsea.png",
-        scoreA: "02",
-        scoreB: "03",
-        teamB: "manchester.png",
-      },
-    ],
+    scores: Array.from({ length: 10 }, () => ({
+      teamA: "chelsea.png",
+      scoreA: "01",
+      scoreB: "02",
+      teamB: "manchester.png",
+    })),
   },
 ];
 
@@ -273,13 +49,20 @@ const ITEMS_PER_PAGE = 1;
 
 const PredectionDetails = () => {
   const [page, setPage] = useState(1);
-  const totalPages = Math.ceil(sampleEntries.length / ITEMS_PER_PAGE);
+  const [entries, setEntries] = useState(sampleEntries);
+  const totalPages = Math.ceil(entries.length / ITEMS_PER_PAGE);
 
   const handlePageChange = (num) => {
     if (num >= 1 && num <= totalPages) setPage(num);
   };
 
-  const currentEntry = sampleEntries.slice(
+  const handleScoreChange = (entryIndex, scoreIndex, key, value) => {
+    const updatedEntries = [...entries];
+    updatedEntries[entryIndex].scores[scoreIndex][key] = value;
+    setEntries(updatedEntries);
+  };
+
+  const currentEntry = entries.slice(
     (page - 1) * ITEMS_PER_PAGE,
     page * ITEMS_PER_PAGE
   )[0];
@@ -309,7 +92,9 @@ const PredectionDetails = () => {
               <span className="font-semibold text-[#0B3666] w-24">
                 {item.label}
               </span>
-              <span className="font-semibold text-[#0B3666]">{item.value}</span>
+              <span className="font-semibold text-[#0B3666]">
+                {item.value}
+              </span>
             </div>
           ))}
         </div>
@@ -317,55 +102,77 @@ const PredectionDetails = () => {
 
       {/* Right side - Entries */}
       <div className="w-full flex flex-col justify-start items-start lg:w-2/3">
-        <div className="">
+        <div>
           {/* top side */}
-
-          <div>
-            <div className="flex flex-col lg:flex-row mb-4">
-              <Title className="">Entries</Title>
-              <div className="lg:ml-6">
-                <p className="text-2xl font-semibold text-[#000000]">
-                  Entry - {currentEntry?.date}
-                </p>
-                <p className="text-2xl font-semibold text-black">
-                  Transaction Id - {currentEntry?.id}
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-4 rounded-md w-fit p-6 shadow-md">
-              <Title className="pb-4">Scores</Title>
-              {currentEntry?.scores?.map((score, idx) => (
-                <div key={idx} className="flex items-center gap-3">
-                  <img
-                    src={`/${score.teamA}`}
-                    alt="Team A"
-                    className="w-8 h-8"
-                  />
-                  <select
-                    className="px-2 py-1 rounded bg-[linear-gradient(to_right,#905e26_0%,#f5ec9b_50%,#905e26_100%)] text-[#0B3666] text-sm"
-                    value={score.scoreA}
-                    disabled
-                  >
-                    <option>{score.scoreA}</option>
-                  </select>
-                  <span className="text-[#0B3666] font-medium">:</span>
-                  <select
-                    className="px-2 py-1 rounded bg-[linear-gradient(to_right,#905e26_0%,#f5ec9b_50%,#905e26_100%)] text-[#0B3666] text-sm"
-                    value={score.scoreB}
-                    disabled
-                  >
-                    <option>{score.scoreB}</option>
-                  </select>
-                  <img
-                    src={`/${score.teamB}`}
-                    alt="Team B"
-                    className="w-8 h-8"
-                  />
-                </div>
-              ))}
+          <div className="flex flex-col lg:flex-row mb-4">
+            <Title className="">Entries</Title>
+            <div className="lg:ml-6">
+              <p className="text-2xl font-semibold text-[#000000]">
+                Entry - {currentEntry?.date}
+              </p>
+              <p className="text-2xl font-semibold text-black">
+                Transaction Id - {currentEntry?.id}
+              </p>
             </div>
           </div>
+
+          <div className="space-y-4 rounded-md w-fit p-6 shadow-md">
+            <Title className="pb-4">Scores</Title>
+            {currentEntry?.scores?.map((score, idx) => (
+              <div key={idx} className="flex items-center gap-3">
+                <img
+                  src={`/${score.teamA}`}
+                  alt="Team A"
+                  className="w-8 h-8"
+                />
+
+                {/* Score A */}
+                <select
+                  className="px-2 py-1 rounded bg-[linear-gradient(to_right,#905e26_0%,#f5ec9b_50%,#905e26_100%)] text-[#0B3666] text-sm"
+                  value={score.scoreA}
+                  onChange={(e) =>
+                    handleScoreChange(page - 1, idx, "scoreA", e.target.value)
+                  }
+                >
+                  <option value={score.scoreA}>{score.scoreA}</option>
+                  {["01", "02", "03"]
+                    .filter((opt) => opt !== score.scoreA)
+                    .map((opt) => (
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
+                </select>
+
+                <span className="text-[#0B3666] font-medium">:</span>
+
+                {/* Score B */}
+                <select
+                  className="px-2 py-1 rounded bg-[linear-gradient(to_right,#905e26_0%,#f5ec9b_50%,#905e26_100%)] text-[#0B3666] text-sm"
+                  value={score.scoreB}
+                  onChange={(e) =>
+                    handleScoreChange(page - 1, idx, "scoreB", e.target.value)
+                  }
+                >
+                  <option value={score.scoreB}>{score.scoreB}</option>
+                  {["01", "02", "03"]
+                    .filter((opt) => opt !== score.scoreB)
+                    .map((opt) => (
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
+                </select>
+
+                <img
+                  src={`/${score.teamB}`}
+                  alt="Team B"
+                  className="w-8 h-8"
+                />
+              </div>
+            ))}
+          </div>
+
           {/* Pagination */}
           <div className="flex items-center justify-start mx-auto mt-6 gap-3">
             <button

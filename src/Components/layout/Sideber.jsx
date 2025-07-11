@@ -10,6 +10,7 @@ import { useState } from "react";
 import Logo from "../Shared/Logo";
 import DashbordSVG from "../../../public/DashbordSVG";
 import PredictionSVG from "../../../public/PredictionsSVG";
+import UserSVG from "../../../public/UserSVG";
 
 const menuItems = [
   {
@@ -24,6 +25,13 @@ const menuItems = [
     path: "/predictions",
     renderIcon: (isActive) => (
       <PredictionSVG strokeColor={isActive ? "#0B3666" : "#FEFEFE"} />
+    ),
+  },
+  {
+    label: "User Management",
+    path: "/user-management",
+    renderIcon: (isActive) => (
+      <UserSVG strokeColor={isActive ? "#0B3666" : "#FEFEFE"} />
     ),
   },
 ];
