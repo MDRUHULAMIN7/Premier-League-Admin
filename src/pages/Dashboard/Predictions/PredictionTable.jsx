@@ -1,5 +1,6 @@
 import { Table, Space, ConfigProvider } from 'antd';
 import { EditOutlined, EyeOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const predictionData = [
   {
@@ -237,10 +238,10 @@ const columns = [
   {
     title: 'Action',
     key: 'action',
-    render: () => (
+    render: (record) => (
       <Space size="middle">
         <EditOutlined className="text-blue-600 text-lg cursor-pointer" />
-        <EyeOutlined className="text-gray-600 text-lg ml-2 cursor-pointer" />
+        <Link to={`/prediction-details/${record?.key}`}><EyeOutlined className="text-gray-600 text-lg ml-2 cursor-pointer" /></Link>
       </Space>
     ),
   },
