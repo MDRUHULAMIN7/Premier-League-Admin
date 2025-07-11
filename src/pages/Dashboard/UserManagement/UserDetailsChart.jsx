@@ -84,7 +84,7 @@ const CustomTooltip = ({ payload, active }) => {
   return null;
 };
 
-export default function QuotesChart() {
+export default function UserdetailsChart() {
   const [selectedMonth, setSelectedMonth] = useState("Monthly");
 
   const handleMonthChange = (value) => {
@@ -92,9 +92,9 @@ export default function QuotesChart() {
   };
 
   return (
-    <div className="mt-10  shadow-md rounded-lg px-4 py-3">
-      <div className="flex items-center justify-between mb-4">
-        <h1 className="text-4xl font-semibold text-[#1A1A1A]">My Reveneu</h1>
+    <div className="mt-10  shadow-md rounded-lg p-6">
+      <div className="flex items-center justify-between mb-8">
+        <h1 className="text-3xl font-semibold text-[#1A1A1A]">Corrected Prediction Growth</h1>
         <ConfigProvider
           theme={{
             components: {
@@ -150,9 +150,7 @@ export default function QuotesChart() {
         >
           <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#0B3666" stopOpacity={1} />
-              <stop offset="50%" stopColor="#0B3666" stopOpacity={0.4} />
-              <stop offset="100%" stopColor="#ffffff" stopOpacity={0.1} />
+              
             </linearGradient>
           </defs>
 

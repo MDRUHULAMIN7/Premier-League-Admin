@@ -6,6 +6,7 @@ import Dashboard from "../pages/Dashboard/Dashboard/Dashboard";
 import Predictions from "../pages/Dashboard/Predictions/Predictions";
 import PredectionDetails from "../pages/Dashboard/Predictions/PredectionDetails";
 import UserManagement from "../pages/Dashboard/UserManagement/UserManagement";
+import UserDetails from "../pages/Dashboard/UserManagement/UserDetails";
 
 
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path:"/user-management",
         element:<div><UserManagement/></div>
+      },
+      {
+        path:"/user-details/:id",
+        element:<div><UserDetails/></div>
       }
     ]
   }
