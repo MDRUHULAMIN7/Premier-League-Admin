@@ -11,6 +11,7 @@ import Logo from "../Shared/Logo";
 import DashbordSVG from "../../../public/DashbordSVG";
 import PredictionSVG from "../../../public/PredictionsSVG";
 import UserSVG from "../../../public/UserSVG";
+import TicketSVG from "../../../public/TicketSVG";
 
 const menuItems = [
   {
@@ -32,6 +33,13 @@ const menuItems = [
     path: "/user-management",
     renderIcon: (isActive) => (
       <UserSVG strokeColor={isActive ? "#0B3666" : "#FEFEFE"} />
+    ),
+  },
+  {
+    label: "Ticket Management",
+    path: "/ticket-management",
+    renderIcon: (isActive) => (
+      <TicketSVG strokeColor={isActive ? "#0B3666" : "#FEFEFE"} />
     ),
   },
 ];
@@ -63,7 +71,7 @@ const Sidebar = ({ closeSidebar }) => {
   };
 
   return (
-    <div className="h-full px-3 pt-6" style={{ fontFamily: "Poppins" }}>
+    <div className="h-full px-3 pt-2" style={{ fontFamily: "Poppins" }}>
       {/* Logo */}
       <div className="flex items-center justify-center pb-6 cursor-pointer">
         <Logo />

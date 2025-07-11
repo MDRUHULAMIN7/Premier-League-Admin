@@ -68,7 +68,7 @@ const PredectionDetails = () => {
   )[0];
 
   return (
-    <div className="min-h-screen px-6 pt-26 flex flex-col lg:flex-row gap-8">
+    <div className="min-h-screen px-6 pt-20 flex flex-col lg:flex-row gap-8 ">
       {/* Left side - Info */}
       <div className="w-full lg:w-1/3">
         <Title className="my-6">See Prediction</Title>
