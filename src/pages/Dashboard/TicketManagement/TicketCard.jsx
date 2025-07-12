@@ -67,7 +67,7 @@ const TicketCard = ({ ticket }) => {
         </button>
       </div>
       <EditTicketModal open={isModalOpen} onCancel={handleClose} id={id}  />
-      <DeleteTicketModal open={isDeleteModalOpen} onCancel={closeDeleteModal} id={id} />
+      <DeleteTicketModal open={isDeleteModalOpen} handleOpen={handleOpen}  onCancel={closeDeleteModal} id={id} />
     </div>
   );
 };
