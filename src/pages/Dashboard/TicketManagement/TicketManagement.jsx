@@ -1,6 +1,8 @@
+import AddTicketModal from "../../../Components/Modal/AddTicketModal";
 import CustomSearch from "../../../Components/Shared/CustomSearch";
 import Filter from "../../../Components/Shared/Filter";
 import TicketCard from "./TicketCard";
+import { useState } from "react";
 
 import { FaPlus } from "react-icons/fa";
 const ticketDataList = [
@@ -92,6 +94,10 @@ const ticketDataList = [
 ];
 
 const TicketManagement = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    
+  const handleOpen = () => setIsModalOpen(true);
+  const handleClose = () => setIsModalOpen(false);
   return (
     <section>
       <div className="flex justify-end gap-3  p-4">
@@ -99,18 +105,24 @@ const TicketManagement = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 p-4 mt-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2  bg-[#E8F2FE] min-h-screen">
         {/* Add New Ticket Card */}
-        <div className=" flex items-center justify-center bg-transparent transition-all duration-300">
-          <button className="flex items-center justify-center gap-x-2 py-3 px-10 rounded-lg !text-white bg-[#0B3666] cursor-pointer">
-            <span className="text-xl font-medium">Add More </span>
+               <div className="flex items-center text-white justify-center">
+          <button
+            onClick={handleOpen}
+            className="flex items-center justify-center gap-x-2 py-3 px-10 rounded-lg  bg-[#0B3666] cursor-pointer"
+          >
+            <span className="text-xl font-medium">Add More</span>
             <FaPlus size={12} />
           </button>
         </div>
+
 
         {/* Ticket Cards */}
         {ticketDataList.map((ticket, index) => (
           <TicketCard key={index} ticket={ticket} />
         ))}
       </div>
+      <AddTicketModal  open={isModalOpen}
+        onCancel={handleClose} />
     </section>
   );
 };
