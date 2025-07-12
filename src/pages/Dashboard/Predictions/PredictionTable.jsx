@@ -282,20 +282,27 @@ const PredictionTable = () => {
           dataSource={predictionData}
           columns={columns}
           rowKey="key"
+           scroll={{ x: "max-content" }}
           pagination={{ pageSize: 12, position: ['bottomCenter'] }}
           rowClassName={() =>
-            'hover:bg-gray-50 rounded-md my-4 bg-white shadow-sm transition'
+            'custom-row-gap custom-row-hover'
           }
-          components={{
+          components={
+            {
             header: {
               cell: (props) => (
                 <th
                   {...props}
-                  className="!bg-[#0E3A66] !text-white !py-4 !gap-2 !rounded-none !text-sm !font-semibold !border-none"
+                  className="table-header-cell"
                 />
               ),
-            },
-          }}
+            },  Table:{
+              rowHoverBg: "#E8F2FE",
+            
+      }
+          }
+        
+    }
         />
       </ConfigProvider>
     </div>

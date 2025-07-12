@@ -12,6 +12,7 @@ import DashbordSVG from "../../../public/DashbordSVG";
 import PredictionSVG from "../../../public/PredictionsSVG";
 import UserSVG from "../../../public/UserSVG";
 import TicketSVG from "../../../public/TicketSVG";
+import TransactionSVG from "../../../public/TransactionSVG";
 
 const menuItems = [
   {
@@ -40,6 +41,13 @@ const menuItems = [
     path: "/ticket-management",
     renderIcon: (isActive) => (
       <TicketSVG strokeColor={isActive ? "#0B3666" : "#FEFEFE"} />
+    ),
+  },
+  {
+    label: "Transaction",
+    path: "/transaction",
+    renderIcon: (isActive) => (
+      <TransactionSVG strokeColor={isActive ? "#0B3666" : "#FEFEFE"} />
     ),
   },
 ];

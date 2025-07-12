@@ -247,22 +247,24 @@ const UserManagementTable = () => {
         }}
       >
         <Table
+
           dataSource={userData}
           columns={columns}
           rowKey="key"
+           scroll={{ x: "max-content" }}
           pagination={{ pageSize: 10, position: ['bottomCenter'] }}
           rowClassName={() =>
-            'hover:bg-gray-50 rounded-md !my-4 bg-white  !border-4 border-red-500 shadow-sm transition'
+            'custom-row-gap'
           }
           components={{
             header: {
               cell: (props) => (
                 <th
                   {...props}
-                  className="!bg-[#0E3A66] !text-white  !gap-2 !rounded-none !text-sm !font-semibold !border-none"
+                  className="table-header-cell "
                 />
               ),
-            },
+            }
           }}
         />
       </ConfigProvider>

@@ -8,6 +8,7 @@ import PredectionDetails from "../pages/Dashboard/Predictions/PredectionDetails"
 import UserManagement from "../pages/Dashboard/UserManagement/UserManagement";
 import UserDetails from "../pages/Dashboard/UserManagement/UserDetails";
 import TicketManagement from "../pages/Dashboard/TicketManagement/TicketManagement";
+import Transaction from "../pages/Dashboard/Transaction/Transaction";
 
 
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path:"/ticket-management",
         element:<div><TicketManagement></TicketManagement></div>
+      },
+      {
+        path:"/transaction",
+        element:<div><Transaction/></div>
       }
     ]
   }

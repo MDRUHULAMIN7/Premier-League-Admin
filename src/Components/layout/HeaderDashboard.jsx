@@ -14,6 +14,8 @@ const routeTitles = [
   { path: '/prediction-details/:id', name: '/ Predictions / Prediction-Details' },
   { path: '/user-management', name: '/ User Management' },
   { path: '/user-details/:id', name: '/ User Management / User Details' },
+  {path: '/ticket-management', name: '/ Ticket Management' },
+  {path: '/transaction', name: '/ Transaction' },
 ];
 
 // Paths that should show a back arrow

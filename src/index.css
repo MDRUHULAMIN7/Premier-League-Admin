@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+.ant-table-tbody > tr.custom-row-gap > td {
+  background: transparent;
+  border-bottom: 4px solid #E8F2FE;
+  border-top: 4px solid #E8F2FE;
+ 
+}
+.custom-row-hover:hover td {
+  background-color: #d5d6db !important;
+}
+
+.table-header-cell {
+  background-color: #0E3A66 !important;
+  color: white !important;
+  border-bottom: 4px solid #E8F2FE !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  padding-left: 1.5rem !important; 
+  padding-right: 1.5rem !important;
+  padding-top: 1rem !important;  
+  padding-bottom: 1rem !important;
+  border-radius: 0 !important;
+}
+
