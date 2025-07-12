@@ -11,6 +11,9 @@ import TicketManagement from "../pages/Dashboard/TicketManagement/TicketManageme
 import Transaction from "../pages/Dashboard/Transaction/Transaction";
 import Settings from "../pages/Dashboard/Settings/Settings";
 import JackpotTracker from "../pages/Dashboard/JackpotTracker/JackpotTracker";
+import AdminProfile from "../pages/Dashboard/AdminProfile";
+import Notifications from "../pages/Dashboard/Notifications";
+import Error from "../Components/Shared/Error";
 
 
 
@@ -22,7 +25,7 @@ const router = createBrowserRouter([
   {
     path:"/",
     element:<App></App>,
-    errorElement:<div>Page Not Found</div>  ,
+    errorElement:<div> <Error/> </div>  ,
     children:[
       {
         path:"",
@@ -63,6 +66,14 @@ const router = createBrowserRouter([
       {
         path:"/jackpot-tracker",
         element:<div><JackpotTracker/></div>
+      },
+      {
+        path:"/admin-profile",
+        element:<div><AdminProfile/></div>
+      },
+      {
+        path:"/notifications",
+        element:<div><Notifications/></div>
       }
     ]
   }
