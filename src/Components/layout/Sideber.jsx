@@ -72,7 +72,7 @@ const Sidebar = ({ closeSidebar }) => {
     <div className="h-full px-3 pt-2" style={{ fontFamily: "Poppins" }}>
       {/* Logo */}
       <div className="flex items-center justify-center pb-6 cursor-pointer">
-        <Logo text={"text-2xl"} leading={"leading-5"} />
+        <Logo  />
       </div>
 
       {/* Menu Items */}

@@ -13,7 +13,7 @@ const HeaderDashboard = ({ toggleSidebar, isSidebarOpen }) => {
           <RouteHeader />
         </div>
         <div className="lg:hidden flex">
-          <Logo text="text-lg" leading="leading-3" />
+          <Logo sm />
         </div>
       </>
 
