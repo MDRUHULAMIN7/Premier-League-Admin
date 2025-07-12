@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 1",
+    "title": "Premier League",
+    "description": "Tickets show your game entries and whether you've won or not.",
+    "totalSold": 12
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 2",
+    "title": "Champions League",
+    "description": "Your prediction for this week's UEFA clash.",
+    "totalSold": 22
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 3",
+    "title": "La Liga Matchday",
+    "description": "Submit entries before Sunday midnight!",
+    "totalSold": 18
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 4",
+    "title": "Bundesliga Picks",
+    "description": "Predict and win exclusive rewards!",
+    "totalSold": 25
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 5",
+    "title": "Serie A Showdown",
+    "description": "Who will top the league? Place your bets!",
+    "totalSold": 31
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 6",
+    "title": "Europa League",
+    "description": "Second-tier drama continues! Predict wisely.",
+    "totalSold": 19
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 7",
+    "title": "World Cup Qualifier",
+    "description": "Every ticket is a step closer to the cup!",
+    "totalSold": 40
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 8",
+    "title": "FA Cup Clash",
+    "description": "Historic rivals face off. Predict now!",
+    "totalSold": 28
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 9",
+    "title": "Copa del Rey",
+    "description": "The Spanish cup race is heating up!",
+    "totalSold": 33
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 10",
+    "title": "International Friendlies",
+    "description": "Will the underdogs surprise us again?",
+    "totalSold": 21
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 11",
+    "title": "EPL Super Sunday",
+    "description": "Huge matchups and big predictions!",
+    "totalSold": 36
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/x8Sg4FXF/ticket-Baner.png",
+    "week": "Week – 12",
+    "title": "Derby Day Picks",
+    "description": "Local rivalries get intense — make your call!",
+    "totalSold": 42
+  }
+]

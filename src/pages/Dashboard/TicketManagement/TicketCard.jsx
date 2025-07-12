@@ -1,12 +1,24 @@
+import { useState } from "react";
+import EditTicketModal from "../../../Components/Modal/EditTicketModal";
+import TicketData from "../../../../Data/Ticket.json";
 const TicketCard = ({ ticket }) => {
-  const { image, week, title, description, totalSold } = ticket;
+  const { image, week, title, description, totalSold,id } = ticket;
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpen = () => setIsModalOpen(true);
+  const handleClose = () => setIsModalOpen(false);
+
+  const specificTicket = TicketData?.find(ticket => ticket?.id === id);
+
+
 
   return (
     <div className="w-full max-w-sm mx-auto p-4 bg-[#E8F2FE] rounded-2xl shadow-xl">
       {/* Banner Image with Overlay */}
       <div className="relative rounded-t-xl overflow-hidden">
         <img
-          src={image}
+          src={image  }
           alt={title}
           className="w-full h-auto aspect-[16/9] object-cover"
         />
@@ -35,13 +47,16 @@ const TicketCard = ({ ticket }) => {
 
       {/* Action Buttons */}
       <div className="flex flex-col gap-3 mt-6 text-white">
-        <button className="w-full py-4 font-medium rounded-lg bg-yellow-400 hover:bg-yellow-500">
+        <button
+          onClick={handleOpen}
+        className="w-full py-4 font-medium rounded-lg bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
           Edit Ticket
         </button>
         <button className="w-full py-4 font-medium rounded-lg bg-red-500 hover:bg-red-600">
           Delete Ticket
         </button>
       </div>
+      <EditTicketModal open={isModalOpen} onCancel={handleClose} id={id}  />
     </div>
   );
 };
