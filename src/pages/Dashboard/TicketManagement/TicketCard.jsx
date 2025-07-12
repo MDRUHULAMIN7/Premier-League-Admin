@@ -1,6 +1,7 @@
 import { useState } from "react";
 import EditTicketModal from "../../../Components/Modal/EditTicketModal";
 import TicketData from "../../../../Data/Ticket.json";
+import DeleteTicketModal from "../../../Components/Modal/DeleteTicketModal";
 const TicketCard = ({ ticket }) => {
   const { image, week, title, description, totalSold,id } = ticket;
 
@@ -8,6 +9,12 @@ const TicketCard = ({ ticket }) => {
 
   const handleOpen = () => setIsModalOpen(true);
   const handleClose = () => setIsModalOpen(false);
+
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+
+   const openDeleteModal = () => setIsDeleteModalOpen(true);
+   const closeDeleteModal = () => setIsDeleteModalOpen(false);
+
 
   const specificTicket = TicketData?.find(ticket => ticket?.id === id);
 
@@ -52,11 +59,15 @@ const TicketCard = ({ ticket }) => {
         className="w-full py-4 font-medium rounded-lg bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
           Edit Ticket
         </button>
-        <button className="w-full py-4 font-medium rounded-lg bg-red-500 hover:bg-red-600">
+        <button
+        
+          onClick={openDeleteModal}
+         className="w-full py-4 font-medium rounded-lg bg-red-500 hover:bg-red-600 cursor-pointer">
           Delete Ticket
         </button>
       </div>
       <EditTicketModal open={isModalOpen} onCancel={handleClose} id={id}  />
+      <DeleteTicketModal open={isDeleteModalOpen} onCancel={closeDeleteModal} id={id} />
     </div>
   );
 };
