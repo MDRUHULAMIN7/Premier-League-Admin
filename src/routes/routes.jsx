@@ -9,6 +9,8 @@ import UserManagement from "../pages/Dashboard/UserManagement/UserManagement";
 import UserDetails from "../pages/Dashboard/UserManagement/UserDetails";
 import TicketManagement from "../pages/Dashboard/TicketManagement/TicketManagement";
 import Transaction from "../pages/Dashboard/Transaction/Transaction";
+import Settings from "../pages/Dashboard/Settings/Settings";
+import JackpotTracker from "../pages/Dashboard/JackpotTracker/JackpotTracker";
 
 
 
@@ -53,6 +55,14 @@ const router = createBrowserRouter([
       {
         path:"/transaction",
         element:<div><Transaction/></div>
+      },
+      {
+        path:"/settings",
+        element:<div><Settings/></div>
+      },
+      {
+        path:"/jackpot-tracker",
+        element:<div><JackpotTracker/></div>
       }
     ]
   }
