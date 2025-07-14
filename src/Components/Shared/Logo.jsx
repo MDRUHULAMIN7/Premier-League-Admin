@@ -24,7 +24,7 @@ const Logo = ({ sm }) => {
         <h1 className="text-2xl font-bold text-white drop-shadow-[0_0_6px_#ffffff] leading-5">
           Premier League
         </h1>
-        <h2 className="text-2xl font-bold text-white drop-shadow-[0_0_6px_#ffffff] leading-4">
+        <h2 className="text-2xl font-bold text-white drop-shadow-[0_0_6px_#ffffff] leading-5">
           Lotto
         </h2>
       </div>
